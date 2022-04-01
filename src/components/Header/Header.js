@@ -27,6 +27,7 @@ const Header = () => {
             <nav>
                 <CustomLink to={'/home'}>Home</CustomLink>
                 <CustomLink to={'/orders'}>Orders</CustomLink>
+                <CustomLink to={'/grandpa'}>Grand Pa</CustomLink>
             </nav>
         </div>
     );

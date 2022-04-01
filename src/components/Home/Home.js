@@ -11,8 +11,15 @@ const Home = () => {
     const [cart, setCart] = useState([])
 
     const handleAddToCart = (selectedItem) => {
-        const newCart = [...cart, selectedItem];
-        setCart(newCart);
+        const exist = cart.find(tShirt => tShirt.id === selectedItem.id)
+        if (!exist) {
+            const newCart = [...cart, selectedItem];
+            setCart(newCart);
+        }
+        else {
+            alert('Item already added');
+        }
+
     };
 
     const handleRemoveFromCart = (selectedTShirt) => {
