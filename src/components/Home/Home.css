@@ -1,0 +1,19 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.tshirt-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.tshirt-container button {
+    border: 0;
+    background-color: crimson;
+    padding: 10px 30px;
+    font-weight: 600;
+    color: white;
+    border-radius: 20px;
+}
